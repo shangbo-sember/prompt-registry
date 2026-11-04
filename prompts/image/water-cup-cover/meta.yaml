@@ -1,0 +1,35 @@
+id: PRM-IMG-003
+slug: water-cup-cover
+title: 玻璃水杯封面图
+use: 封面              # 封面 / 文中 / 结尾
+aspect_ratio: "16:9"
+image_size: "2K"
+model: google/gemini-3.1-flash-image
+status: 候选           # 候选 / 选中 / 弃用
+current_version: 1
+owner: 阿博
+tags: [封面, 极简产品, 玻璃杯]
+
+# 对应飞书版本台账里的图片ID（同一配图位的所有版本共用一个图片ID）
+ledger_image_id: IMG-20261104-006
+
+# 关联内容（定稿后填写；未关联留空）
+content_ref:
+  content_id: ""
+  content_title: ""
+  platform: ""
+
+requirement:
+  must_have:
+    - 通透直筒玻璃杯，杯身无花纹、无任何标识
+    - 杯内装清水，约七分满
+    - 浅灰白纯净背景，无其他道具
+    - 杯子居中偏右，左侧上方留出放标题的干净留白
+  avoid:
+    - 画面中出现文字、水印、二维码
+    - 出现品牌标识或竞品包装
+    - 出现人物或手部
+    - 杂乱道具、多余装饰
+
+created_at: 2026-11-04
+updated_at: 2026-11-04

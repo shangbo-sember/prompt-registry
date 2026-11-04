@@ -1,0 +1,34 @@
+prompt_id: PRM-IMG-003
+slug: water-cup-cover
+title: 玻璃水杯封面图回归用例
+cases:
+  - case_id: C1
+    intent: 必现元素是否齐全
+    checks:
+      - 杯子为直筒玻璃材质，通透，杯身无花纹无标识
+      - 杯内装水约七分满，水面有高光
+      - 背景为浅灰白色，画面无其他道具
+      - 杯子居中偏右，左侧上方留白可放标题
+    auto_checkable: false
+
+  - case_id: C2
+    intent: 禁忌是否被违反
+    checks:
+      - 画面中无文字、无水印、无二维码
+      - 无品牌标识、无竞品包装
+      - 无人物、无手部
+    auto_checkable: false
+
+  - case_id: C3
+    intent: 材质与光影真实度
+    checks:
+      - 玻璃厚度与折射真实，不像塑料
+      - 有柔和投影，不出现硬阴影或刺眼高光
+    auto_checkable: false
+
+  - case_id: C4
+    intent: 版式适配
+    checks:
+      - 16:9 下主体占画面高度约 40%-50%，不过大过小
+      - 缩略图尺寸下仍能一眼看清主体轮廓
+    auto_checkable: false
