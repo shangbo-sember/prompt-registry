@@ -1,0 +1,29 @@
+id: PRM-IMG-001
+slug: cover-tech-hero
+title: 科技感封面主图
+use: 封面
+aspect_ratio: '16:9'
+image_size: 2K
+model: 平台生图默认模型
+status: 候选
+current_version: 2
+owner: 阿博
+tags:
+- 封面
+- 科技感
+- 深色底
+content_ref:
+  content_id: ''
+  content_title: ''
+  platform: ''
+requirement:
+  must_have:
+  - 主视觉为一台居中的设备类产品，占画面 40%-60%
+  - 画面上标题文字清晰可读、无错字无乱码
+  - 右下角预留品牌标识位（不放任何 logo）
+  avoid:
+  - 人物正脸出镜
+  - 第三方品牌 logo、水印、二维码
+  - 超过三种主色的花哨配色
+created_at: 2026-10-28
+updated_at: 2026-11-03

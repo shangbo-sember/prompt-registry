@@ -1,0 +1,30 @@
+id: PRM-IMG-002
+slug: inline-product-closeup
+title: 文中产品特写图
+use: 文中              # 封面 / 文中 / 结尾
+aspect_ratio: "3:4"
+image_size: "2K"
+model: 平台生图默认模型
+status: 选中           # 候选 / 选中 / 弃用
+current_version: 1
+owner: 阿博
+tags: [文中图, 产品特写, 浅色底]
+
+# 关联内容（定稿后填写；未关联留空）
+content_ref:
+  content_id: CNT-2026-1103-07
+  content_title: 《把提示词当代码管理：一次版本治理的复盘》
+  platform: ""
+
+requirement:
+  must_have:
+    - 产品居中、完整入镜、不裁切
+    - 浅色背景，产品与背景有明显明度差
+    - 画面留白充足，便于插入正文旁
+  avoid:
+    - 出现人物手部
+    - 出现产品 logo 之外的任何文字
+    - 强烈反光和硬阴影
+
+created_at: 2026-11-02
+updated_at: 2026-11-03

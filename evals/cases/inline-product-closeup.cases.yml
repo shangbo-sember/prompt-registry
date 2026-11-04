@@ -1,0 +1,32 @@
+prompt_id: PRM-IMG-002
+slug: inline-product-closeup
+title: 文中产品特写图回归用例
+cases:
+  - case_id: C1
+    intent: 必现元素是否齐全
+    checks:
+      - 产品居中、完整入镜、四边未裁切
+      - 背景为浅色，与产品有明显明度差
+      - 四周留白充足，可直接嵌入正文
+    auto_checkable: false
+
+  - case_id: C2
+    intent: 禁忌是否被违反
+    checks:
+      - 画面中无人物、无手部
+      - 除产品自身标识外无任何文字
+      - 无刺眼高光、无硬边阴影
+    auto_checkable: false
+
+  - case_id: C3
+    intent: 材质还原
+    checks:
+      - 金属质感真实，哑光反射细腻
+      - 接触阴影自然，产品不像是"贴"在背景上
+    auto_checkable: false
+
+  - case_id: C4
+    intent: 版式适配
+    checks:
+      - 3:4 竖版下主体比例不过大，适配正文 1/3 栏宽展示
+    auto_checkable: false

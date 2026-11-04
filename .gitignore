@@ -1,0 +1,18 @@
+# 只收文本与结论
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.psd
+*.ai
+*.zip
+
+# 运行残留
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+
+# 本地隐私
+.env
+*.local

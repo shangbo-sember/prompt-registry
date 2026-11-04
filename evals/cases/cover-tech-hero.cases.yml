@@ -1,0 +1,44 @@
+prompt_id: PRM-IMG-001
+slug: cover-tech-hero
+title: 科技感封面主图回归用例
+# 用例与 requirement 对齐；改 prompt 时用例一般不动，这才能检验"改动有没有破坏原有要求"
+cases:
+  - case_id: C1
+    intent: 必现元素是否齐全
+    checks:
+      - 主视觉设备居中，占画面高度约 40%-65%
+      - 设备边缘清晰、未被裁切
+      - 标题文字出现在画面下方居中区域
+      - 副标题存在且不与主标题重叠
+      - 右下角留出干净空白区，无图案无文字
+    auto_checkable: false
+
+  - case_id: C2
+    intent: 禁忌是否被违反
+    checks:
+      - 画面中无人物（含人影、剪影）
+      - 无第三方品牌 logo、无水印、无二维码
+      - 主色不超过三种
+    auto_checkable: false
+
+  - case_id: C3
+    intent: 文字渲染质量
+    checks:
+      - 主标题「Prompt 即资产」字形规整、笔画完整
+      - 无错字、无乱码、无叠字
+      - 文字未与主体或背景元素粘连
+    auto_checkable: false
+
+  - case_id: C4
+    intent: 版式适配
+    checks:
+      - 16:9 下主体不被裁切，信息流缩略图状态仍能看清主体
+      - 叠加标题后不遮挡设备关键部位
+    auto_checkable: false
+
+  - case_id: C5
+    intent: 稳定性（同版本多次出图）
+    checks:
+      - 连出 3 张，构图与色调基本一致，无明显跳变
+      - 最差的一张仍在可用范围内
+    auto_checkable: false
