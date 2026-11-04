@@ -3,10 +3,10 @@ slug: water-cup-cover
 title: 玻璃水杯封面图
 use: 封面              # 封面 / 文中 / 结尾
 aspect_ratio: "16:9"
-image_size: "2K"
+image_size: "4K"
 model: google/gemini-3.1-flash-image
 status: 候选           # 候选 / 选中 / 弃用
-current_version: 2
+current_version: 3
 owner: 阿博
 tags: [封面, 极简产品, 玻璃杯, 品牌露出]
 
@@ -22,18 +22,20 @@ content_ref:
 requirement:
   must_have:
     - 通透直筒玻璃杯，杯身无花纹
-    - 杯身正面有自有品牌标识（影刀 logo），单色浅灰白、尺寸克制
+    - 杯身正面有品牌 logo，来自官方素材 yingdao-logo.png，不旋转不拉伸
+    - logo 宽度不小于 480px，四周留白充足
     - 杯内装清水，约七分满
     - 浅灰白纯净背景，无其他道具
     - 杯子居中，左侧上方留出放标题的干净留白
   avoid:
-    - 除杯身自有标识外出现任何文字、水印、二维码
+    - 由模型自行绘制或模仿任何 logo（必须用官方素材文件）
+    - 除 logo 外出现任何文字、水印、二维码
     - 出现第三方品牌标识或竞品包装
     - 出现人物或手部
-    - 杂乱道具、多余装饰
+    - logo 压在水面线、杯口或杯底厚边上
 
-# 已知风险：模型自行渲染的品牌图形标与官方标识不一致，对外发布前必须核对或改用官方素材后期贴图
-known_risk: 品牌标识渲染不准确
+# v3 起：品牌标识改由官方素材后期置入，模型不再画 logo，此风险已消除
+known_risk: ""
 
 created_at: 2026-11-04
 updated_at: 2026-11-04
